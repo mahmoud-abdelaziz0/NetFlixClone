@@ -27,7 +27,12 @@ const Home = () => {
             <TitleCards></TitleCards>
           </div>
         </div>
-        
+        <div className="more-cards">
+            <TitleCards title={"Blockbuster Movies"}></TitleCards>
+            <TitleCards title={"Only on Netflix"}></TitleCards>
+            <TitleCards title={"Upcomging"}></TitleCards>
+            <TitleCards title={"Top Pics for You"}></TitleCards>
+        </div>
       </div>
     </>
   );
