@@ -27,6 +27,7 @@ const Home = () => {
             <TitleCards></TitleCards>
           </div>
         </div>
+        
       </div>
     </>
   );
