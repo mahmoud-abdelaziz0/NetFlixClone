@@ -72,5 +72,13 @@ login-logo
   height: 16px;
   cursor: pointer;
 }
-
-
+.form-switch {
+  margin-top: 40px;
+  color: #737373;
+}
+.form-switch span {
+  margin-left: 6px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
