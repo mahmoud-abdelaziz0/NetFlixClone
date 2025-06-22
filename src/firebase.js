@@ -1,9 +1,12 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth/cordova";
+// import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth/cordova";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+
 import { getFirestore } from "firebase/firestore";
-import { addDoc, collection } from "firebase/firestore/lite";
+// import { addDoc, collection } from "firebase/firestore/lite";
+import { addDoc, collection } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyD1io9v4hWGTzstcUGiEbr96A8Oc2cbCAQ",
@@ -36,7 +39,7 @@ const signup = async (name, email, password) => {
 
 const login = async (email, password) => {
   try {
-    signInWithEmailAndPassword(auth, email, password);
+    await signInWithEmailAndPassword(auth, email, password);
   }catch (error) {
     console.error("Error logging in:", error);
     alert(error);
